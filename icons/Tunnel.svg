@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F8F83"/><stop offset="1" stop-color="#123C4A"/>
+    </linearGradient>
+    <radialGradient id="hole" cx="0.5" cy="0.62" r="0.6">
+      <stop offset="0" stop-color="#FFE7A3"/><stop offset="0.18" stop-color="#E8B44C"/>
+      <stop offset="0.45" stop-color="#1D3440"/><stop offset="1" stop-color="#0B1A22"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14"/><feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <path filter="url(#sh)" fill="#F4F7F8"
+        d="M512 230 L748 314 L748 512 C748 676 640 770 512 812 C384 770 276 676 276 512 L276 314 Z"/>
+  <path fill="url(#hole)" d="M418 720 L418 548 A94 94 0 0 1 606 548 L606 720 Z"/>
+  <path fill="none" stroke="#C9D3D6" stroke-width="10" d="M418 720 L606 720"/>
+</svg>

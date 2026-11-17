@@ -1,0 +1,3 @@
+*.app/
+icons/*.icns
+.DS_Store
