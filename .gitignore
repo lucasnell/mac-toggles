@@ -1,3 +1,3 @@
-*.app/
+build.noindex/
 icons/*.icns
 .DS_Store

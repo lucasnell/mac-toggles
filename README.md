@@ -9,7 +9,7 @@ Two one-click macOS AppleScript apps.
 
 ```bash
 brew install librsvg   # provides rsvg-convert, used for icons
-./build.sh             # writes Toggle Cloud.app and Toggle WiscVPN.app here
+./build.sh             # writes the apps to build.noindex/
 ```
 
-Copy the apps to `/Applications`. On first run, Toggle Cloud asks permission to control System Events and the cloud apps.
+Copy the apps from `build.noindex/` to `/Applications`. The `.noindex` suffix keeps Spotlight (and launchers like Alfred) from listing the build copies. On first run, Toggle Cloud asks permission to control System Events and the cloud apps.
